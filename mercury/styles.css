@@ -6,7 +6,7 @@
 :root{--dark-color: #E75480}
 :root{--light-color: #f4f4f4}
 
-html {}
+
 /* ELEMENT STYLES */
 * {box-sizing: border-box;
 padding:0;
@@ -262,7 +262,7 @@ grid-template:
 }
 
 
-
+.flex-gallery {justify-content: center;}
 
 
 
