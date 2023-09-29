@@ -92,13 +92,13 @@ bottom: -70px;
 background: #fff;
 right:0;
 left:0;
-transform: skewY(-3deg);
+transform: skewY(-2deg);
 /* Safari / Chrome */
--webkit-transform: skewY(2deg);
+/* -webkit-transform: skewY(2deg); */
 /* Mozilla */
--moz-transform: skewY(2deg);
+/* -moz-transform: skewY(2deg); */
 /* Microsoft */
--ms-transform: skewY(2deg); 
+/* -ms-transform: skewY(2deg);  */
 }
 
 
