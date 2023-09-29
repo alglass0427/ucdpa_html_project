@@ -1,0 +1,131 @@
+/* UTILITIES */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;}
+
+/* GENERIC FLEX CSS */
+.flex{display:flex;
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
+height:100%
+}
+
+.grid{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 20px;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.grid-3{ grid-template-columns: repeat(3,1fr);
+            justify-items: center;}
+
+
+
+.card{
+background-color: white;
+color: #333;
+border-radius: 10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+padding:20px;
+margin: 20px;
+}
+
+.btn{display: inline-block;
+padding: 10px 30px;
+cursor: pointer;
+background:var(--primary-color);
+color: #fff;
+border: none;
+border-radius: 5px;
+}
+.btn-outline{background-color: transparent;
+        border: 1px #fff solid;}
+
+
+.text-center {text-align: center;}
+
+
+/* small animation on button hover */
+.btn:hover{transform: scale(0.98);}
+
+
+/* Background And color buttons */
+
+.bg-primary , .btn-primary {background-color: var(--primary-color);
+                            color: #fff;}
+
+.bg-secondary , .btn-secondary {background-color: var(--secondary-color);
+                             color: #fff;}
+
+.bg-dark , .btn-dark {background-color: var(--dark-color);
+                             color: #fff;}
+
+.bg-light , .btn-light {background-color: var(--light-color);
+                             color: #333;}
+   
+/* Text Sizes */
+
+
+.lead {font-size: 20px;}
+
+.sm {font-size: 1rem;}
+
+.md {font-size: 2rem;}
+
+.lg {font-size: 3rem;}
+
+.xl {font-size: 4rem;}
+
+
+/* Pseudo */
+.showcase::before,
+.showcase::after { content:'';
+position: absolute;
+height: 100px; 
+bottom: -70px;
+background: #fff;
+right:0;
+left:0;
+transform: skewY(-3deg);
+/* Safari / Chrome */
+-webkit-transform: skewY(2deg);
+/* Mozilla */
+-moz-transform: skewY(2deg);
+/* Microsoft */
+-ms-transform: skewY(2deg); 
+}
+
+
+
+
+/* MARGINS */
+.my-1{margin:1rem 0}   /*Margin Class 1 Top and Bottom*/
+.my-2{margin:1.5rem 0} /*Margin Class 2 Top and Bottom*/
+.my-3{margin:2rem 0}  /*Margin Class 3 Top and Bottom*/
+.my-4{margin:3rem 0}  /*Margin Class 4 Top and Bottom*/
+.my-5{margin:4rem 0}  /*Margin Class 5 Top and Bottom*/
+
+.m-1{margin:1rem}   /*Margin Class 1 All Around*/
+.m-2{margin:1.5rem} /*Margin Class 2 All Around*/
+.m-3{margin:2rem}  /*Margin Class 3 All Around*/
+.m-4{margin:3rem}  /*Margin Class 4 All Around*/
+.m-5{margin:4rem}  /*Margin Class 5 All Around*/
+
+/* PADDING */
+.py-1{padding:1rem 0}   /*Padding Class 1 Top and Bottom*/
+.py-2{padding:1.5rem 0} /*Padding Class 2 Top and Bottom*/
+.py-3{padding:2rem 0}  /*Padding Class 3 Top and Bottom*/
+.py-4{padding:3rem 0}  /*Padding Class 4 Top and Bottom*/
+.py-5{padding:4rem 0}  /*Padding Class 5 Top and Bottom*/
+
+.p-1{padding:1rem}   /*Padding Class 1 All Around*/
+.p-2{padding:1.5rem} /*Padding Class 2 All Around*/
+.p-3{padding:2rem}  /*Padding Class 3 All Around*/
+.p-4{padding:3rem}  /*Padding Class 4 All Around*/
+.p-5{padding:4rem}  /*Padding Class 5 All Around*/ 

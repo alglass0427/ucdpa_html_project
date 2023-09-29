@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="./utilities.css">
+    <link  rel="stylesheet" href="./styles.css">
+    <!-- cdnjs font awsome import https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+                            integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+                            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mercury | Mercury Music</title>
+</head>
+<body>
+    <div class = "navbar">
+        <div class ="container flex">
+            <div id="logo_container" class = "logo">
+                <img Class = "logo" src="./guitar_images/mercury_music.webp" alt="Mercury Logo" width = "100px" height = "auto">
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href = "Mercury Website.html" aria-label="Home">Home</a></li>
+                        <li><a href = "gallery.html" aria-label="Gallery">Gallery</a></li>
+                        <li><a href = "tour_test.html" aria-label="Tour">Tour</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+    </div> 
+
+    <!-- MAin Section -->
+
+    <section class = "showcase">
+        <div class = "container grid">
+            <div class = "showcase-text">
+                <h1>New release</h1>
+                    <!-- <p>This is Where i will keep all
+                        the Albums
+                    </p> -->
+                    <div id = "latestvid" class = "iframe-container card">
+                    <iframe
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY" height="auto" width="auto" title="New Video" allow = "fullscreen"></iframe>
+                    <!-- <iframe src="https://youtu.be/PeOEtIS6EFc?si=WYOoEBzDZOliBoOt" height="200" width="300" title="Iframe Example"></iframe> -->
+                    <!-- 2 classes  "btn btn-outline"-->
+                    </div>  
+                    <button class="btn btn-outline"> <a href = "gallery.html">
+                        Read More
+                        </a></button>
+            </div>           
+
+            <div class="showcase-form card">
+                    <h2>Sign up to Newsletter</h2>
+                        <form>
+                            <div class="form-control">
+                                <input type="text" name = "name"
+                                placeholder="ex. Holly Glass" required
+                                >
+                            </div>
+                            <div class="form-control">
+                                <input type="text" name = "company"
+                                placeholder="ex. Universal Music" required
+                                >
+                            </div>
+                            <div class="form-control">
+                                <input type="text" name = "email"
+                                placeholder="ex. example@gmail.com" required
+                                >
+                            </div>
+                            <div>
+                                <input type="submit" value="Send"
+                                class="btn btn-primary">
+                            </div>
+                        </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class = "stats">
+        <div class = "container">
+            <h3 class="stat-heading text-center my-1">
+                Welcome to the musical experiance
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+
+                <div class = "fontaw">
+                    <i class="fas fa-guitar fa-3x"></i>
+                    <h3>11,294</h3>
+                    <p class="text-secondary">Lessons Given</p>
+                </div>
+
+
+                <div class = "fontaw">
+                    <i class="fas fa-graduation-cap fa-3x"></i>
+                    <h3>500+</h3>
+                    <p class="text-secondary">Students</p>
+                </div>
+
+                <div class = "fontaw">
+                    <i class="fas fa-headphones fa-3x"></i>
+                    <h3>50m +</h3>
+                    <p class="text-secondary">Downloads</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+<!-- Cli -->
+
+    <section class="cli">
+        <div class="container grid">
+           <!-- <img src="./Guitar Images/microphone.JPG" alt="Picture of a Micropphone">  -->
+            <div class="card">
+                <h3> Learn at your own pace!</h3>   
+            </div>
+            <div class="card">
+                <h3>Insert some text here!</h3>
+            </div>
+        </div>
+
+    </section>
+<!-- <br> -->
+
+
+<!-- Tour Info -->
+
+    <section class = "tour bg-primary my-2 py-2">
+        <div class ="container grid">
+            <div class="text-center">
+                <h2 class="lg">Upcoming Tour Dates</h2>
+                <p class="lead my-1">2023 / 2024 Tour - Coming to your city soon</p>
+                <a href="tour_test.html" class="btn btn-dark">Read More</a>
+            </div>
+<!-- https://alglass0427.github.io/mercury/ -->
+            <img src="/guitar_images/tour_crowd.jpg" alt="Image of me on Stage" aria-label="Image Of the Tour"
+                    >
+
+        </div>
+    </section>
+
+<!-- Streaming -->
+
+<section class = "streams">
+    <h2 class="md text-center my-2">
+        Stream
+    </h2>
+
+    <div class="container flex">
+        <div class="card">
+            <h4>Spotify</h4>
+            <a href="https://open.spotify.com/" aria-label="Spotify Link">
+                <i class="fa-brands fa-spotify fa-3x" style="color: #511f51;"></i>
+            </a>
+        </div>
+
+        <div class="card">
+            <h4>Deezer</h4>
+
+                <a href="https://www.deezer.com/en/" aria-label="Deezer Link">
+                    <i class="fa-brands fa-deezer fa-3x" style="color: #511f51;"></i>
+                </a>
+
+        </div>
+        <div class="card">
+            <h4>YouTube</h4>
+                <a href="https://www.youtube.com/" aria-label="YouTube Link"> 
+                    <i class="fa-brands fa-youtube fa-3x" style="color: #511f51;"></i>
+                </a>
+
+        </div>
+        <div class="card">
+            <h4>Amazon</h4>
+
+                <a href="https://music.amazon.com/" aria-label="Amazon Link">
+                    <i class="fa-brands fa-amazon fa-3x" style="color: #511f51;"></i>
+                </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Footer  ADDED PADDING AND MARGIN TO ENSURE THE STYLE AT THE LAST CASCADE OF CSS --->
+<footer class="footer bg-primary py5" style="padding: 30px 0 ;">
+    <div class="container grid grid-3">
+
+        <nav>
+            <ul>
+                <li ><a href = "https://www.facebook.com/" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook fa-2x" style="color: #511f51;"></i>
+                    </a>
+                </li>
+
+                <li><a href = "https://twitter.com/"  aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter fa-2x" style="color: #511f51;"></i>
+                    </a>
+                </li>
+
+                <li><a href = "https://www.instagram.com/"  aria-label="Instagram">
+                    <i class="fa-brands fa-instagram fa-2x" style="color: #511f51;"></i>
+                    </a>
+                </li>
+
+                <li><a href = "https://www.tiktok.com/en/"  aria-label="Tik Tok">
+                    <i class="fa-brands fa-tiktok fa-2x" style="color: #511f51;"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <div>
+            <p>&copy; HG Holdings</p>
+        </div>
+
+        <div>
+
+            <table>
+
+                <tr>
+                    <td> <i class="fas fa-envelope fa-1x" style="color: #511f51;"></i> </td>
+                    <td> &nbsp; &nbsp;</td>
+                    <td>    <a href="mailto:alwglass@gmail.com">alwglass@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td> <i class="fa-solid fa-phone fa-1x" style="color: #511f51;"></i> </td>
+                    <td> &nbsp; &nbsp;</td>
+                    <td>    <a href="TEL:0281582090">0851582090</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html> 
+

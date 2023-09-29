@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* :root variables can be used anywhere using var() STYLES*/
+:root{--primary-color: lightpink}
+:root{--secondary-color: #E75480}
+:root{--dark-color: #E75480}
+:root{--light-color: #f4f4f4}
+
+html {}
+/* ELEMENT STYLES */
+* {box-sizing: border-box;
+padding:0;
+margin: 0;
+
+}
+
+body{font-family: 'Lato', sans-serif ;
+color :#333;
+line-height: 1.6;}
+
+ul{list-style-type: none;}
+
+a{text-decoration: none;
+color :#333;}
+
+h1,
+h2 {font-weight: 300;
+line-height: 1.2;
+margin: 10px 0;}
+
+/* .logo_container{} */
+
+
+.logo {
+margin: 10px ;
+max-width: inherit;
+max-height: inherit;
+height: 120px;
+width: inherit;
+object-fit: cover;
+}
+
+
+p{margin: 10px 0;}
+
+img{width: 100%;}
+
+
+/* NAVE BAR STYLES */
+.navbar{background-color: #fff ; /* variable or the main website color*/
+color: #fff;
+height: 180px;
+}
+
+.navbar ul {display:flex}
+.navbar ul {font-size: 24px;}
+.navbar a {color: var(--primary-color);
+padding: 10px;
+margin: 0 5px;
+font-weight: bold;}
+
+.navbar a:hover {border-bottom: 2px var(--primary-color) solid;}
+
+/* FLEX CLASS INSIDE NAVBAR CLASS CSS */
+.navbar .flex{justify-content: space-between;}
+
+
+/* SHOWCASE STYLES */
+
+.showcase{height: 400px;
+background-color:var(--primary-color);
+color:white ;
+position:relative;
+}
+
+.showcase-text{margin-left: auto;margin-right: auto;}
+
+.showcase-form {position: relative;
+top: 60px;
+height: 350px;
+width: 400px;
+z-index: 100;
+}
+
+.showcase-form .form-control{
+margin: 30px 0;
+}
+
+
+/* Styles for the Input boxes text and email */
+.showcase-form input[type='text'] ,
+.showcase-form input[type='email'] {
+border:0;
+border-bottom: 1px solid #b4becb;
+width: 100%;
+padding:3px;
+font-size: 16px;
+}
+
+/* Style For the input boxes when Clicked
+- removes outlines */
+.showcase-form input:focus{
+outline: none;
+}
+
+.showcase h1{font-size: 40px;
+}
+.showcase p {margin:20px 0;}
+
+.showcase .grid {
+grid-template-columns: 55% 45%;
+gap: 45px;
+overflow: visible;
+
+}
+
+
+.iframe-container{padding:20px}
+#latestvid{width:350px; height: 200px;}
+
+
+/* Stats */
+
+.stats {padding-top: 100px;}
+
+.stats-heading {max-width: 500px;
+margin: auto;}
+
+.stats .grid h3 {font-size: 35px;}
+.stats .grid p {font-size: 20px;
+font-weight: bold;}
+
+
+/* Cli */
+
+/* .cli{margin-top:auto;} */
+
+.cli .grid {grid-template-columns: repeat(2, 1fr);
+/* grid-template-rows: repeat(3, 1fr); */
+}
+
+.cli .card {text-align: center;}
+
+
+/* First Child will take the first section of The grid entry */
+.cli .grid > *:first-child {
+grid-column: 1/span 1;
+grid-row: 1/span 1;
+}
+
+.cli img {width: auto; max-height: 150px;}
+
+
+/* Tour Section Styles */
+
+
+
+.tour .grid { grid-template-columns: 4fr 3fr;}
+
+.tour img {border-radius: 10px;}
+
+/* Stream Styles */
+
+.streams {margin-bottom:20px}
+.streams .flex {justify-content: space-around;
+flex-wrap: wrap;}
+
+/* Note ::::: margin top , right , bottom , left Will take the right */
+/* Note ::::: transition targets
+transorm from card hover to move card - 15px */
+.streams .card {margin: 18px 10px 10px ;
+text-align: center;
+transition: transform ease-in 0.2s;
+}
+
+.streams .card:hover{ transform: translateY(-15px);}
+
+
+/* Tour Site Styles */
+
+/* .tour-head .container .grid {text-align: center;} */
+/* .tour-head{border: 2px solid black;} */
+.table {margin-top: 20px;
+margin-bottom: 20px;}
+.table th {
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.table tr {
+padding-top: 10px;
+padding-bottom: 20px;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.flex-table
+{display:flex;
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
+height:100%;
+border: 2px solid black;
+flex: 1;}
+
+.tour-year{border-bottom: 2px var(--primary-color) solid; justify-self:end;
+}
+
+
+
+
+/* Footer Styles */
+
+.footer nav ul {display: flex;
+flex-direction: row;
+justify-content: flex-start;
+}
+
+.footer nav li {padding-right:20px}
+
+
+
+
+#tour-heading1{grid-area: hding1;}
+#tour-heading2{grid-area: hding2;}
+#tour-heading3{grid-area: hding3;}
+#tourhead{grid-area: tourhead;}
+#ddate1 {grid-area: dd1;}
+#ddate2 {grid-area: dd2;}
+#ddate3 {grid-area: dd3;}
+#ddate4 {grid-area: dd4;}
+#tdate1 {grid-area: td1;}
+#tdate2 {grid-area: td2;}
+#tdate3 {grid-area: td3;}
+#tdate4 {grid-area: td4;}
+#nydate1 {grid-area: nyd1;}
+#nydate2 {grid-area: nyd2;}
+#nydate3 {grid-area: nyd3;}
+#nydate4 {grid-area: nyd4;}
+
+
+/* #tour-heading1{grid-area: h;}
+#tour-heading1{grid-area: h;}
+#tour-heading1{grid-area: h;} */
+
+.grid-tour {background-color: white;
+justify-items: center;
+display:grid;
+gap:10px;
+padding-bottom:20px;
+grid-template:
+"tourhead tourhead tourhead" 80px
+"hding1 hding2 hding3" 1fr
+"dd1 td1 nyd1"
+"dd2 td2 nyd2"
+"dd3 td3 nyd3"
+"dd4 td4 nyd4"
+;
+/* grid-template-columns: 1fr 2fr; */
+}
+
+
+
+
+
+
+
+/* Tablet Media */
+
+@media (max-width:768px) {
+.navbar .logo{height: 100px; width: inherit;}
+.navbar {height:200px}
+.navbar .flex {flex-direction: column; justify-content: center;}
+.grid,
+.showcase .grid ,
+.stat .grid ,
+.cli .grid ,
+.cloud .grid {
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;}
+
+.showcase {height: auto;}
+.showcase-text {text-align: center; margin-top: 40px;}
+/* centers the item in The Grid or flex item */
+.showcase-form {justify-self: center; margin:auto}
+.cli .grid > *:first-child {
+grid-column: 1;
+grid-row: 1;
+}
+.showcase .card {width: auto; height: auto;}
+.cli .card {display: none;}
+
+.text-center h2 {font-size: 30px; border: 2px solid black}
+
+.fontaw {font-size: medium;}
+.stats .grid p {font-size: 15px;}
+.stats .grid h3 {font-size: 25px;}
+
+}
+
+
+/* Mobile Media */
+
+@media (max-width:500px) {
+.navbar .logo{height: 70px; width: inherit;}
+.navbar {height:250px}
+.navbar .flex {flex-direction: column; justify-content: center;}
+.navbar ul {flex-direction: column; padding:10px;}
+.navbar ul li {margin:5px 0; font-size: large;}
+
+/* html {font-size: 70%;} */
+.grid img {display: none;}
+.tour .grid { grid-template-columns: 1fr;}
+.grid-tour #tourhead {font-size: 3rem;}
+.grid-tour {
+/* border: solid green; */
+grid-template:
+"tourhead" 80px
+"hding1" 1fr
+"dd1"
+"dd2"
+"dd3"
+"dd4"
+"hding2" 1fr
+"td1"
+"td2"
+"td3"
+"td4"
+"hding3" 1fr
+"nyd1"
+"nyd2"
+"nyd3"
+"nyd4" ; }}
