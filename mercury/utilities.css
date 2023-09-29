@@ -87,8 +87,8 @@ border-radius: 5px;
 .showcase::before,
 .showcase::after { content:'';
 position: absolute;
-height: 100px; 
-bottom: -70px;
+height: 90px; 
+bottom: -60px;
 background: #fff;
 right:0;
 left:0;

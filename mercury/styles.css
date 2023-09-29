@@ -67,16 +67,16 @@ font-weight: bold;}
 
 /* SHOWCASE STYLES */
 
-.showcase{height: 400px;
+.showcase{height: 450px;
 background-color:var(--primary-color);
 color:white ;
 position:relative;
 }
 
-.showcase-text{margin-left: auto;margin-right: auto;}
+.showcase-text{margin-left: auto;margin-right: auto;text-align:center}
 
 .showcase-form {position: relative;
-top: 60px;
+top: 15px;
 height: auto;
 width: auto;
 z-index: 100;
@@ -139,8 +139,11 @@ font-weight: bold;}
 /* grid-template-rows: repeat(3, 1fr); */
 }
 
-.cli .card {text-align: center;}
+.cli .card {text-align: center;
+            color:var(#fff);
+                background-color: #bbfbfa;}
 
+.cli .container{padding:0}
 
 /* First Child will take the first section of The grid entry */
 .cli .grid > *:first-child {
@@ -202,7 +205,7 @@ padding-right: 50px;
 justify-content: center;
 align-items: center;
 height:100%;
-border: 2px solid black;
+/* border: 2px solid black; */
 flex: 1;}
 
 .tour-year{border-bottom: 2px var(--primary-color) solid; justify-self:end;
@@ -290,8 +293,8 @@ grid-column: 1;
 grid-row: 1;
 }
 .showcase .card {width: auto; height: auto;}
-.cli .card {display: none;}
-
+/* .cli .card {display: none;} */
+.stat-heading {display:none;}
 .text-center h2 {font-size: 30px; border: 2px solid black}
 
 .fontaw {font-size: medium;}
