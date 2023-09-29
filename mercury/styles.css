@@ -265,7 +265,28 @@ grid-template:
 }
 
 
-.flex-gallery {justify-content: center;}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 40px;
+  }
+  
+  .image-gallery > li {
+    flex-basis: 350px; /* width: 350px; */
+  }
+  
+  .image-gallery li img {
+    /* object-fit: cover; */
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
 
 
 
