@@ -5,6 +5,8 @@
     overflow: auto;
     padding: 0 40px;}
 
+
+    
 /* GENERIC FLEX CSS */
 .flex{display:flex;
 /* flex-direction: column; */
@@ -49,6 +51,7 @@ border-radius: 5px;
 
 
 .text-center {text-align: center;}
+.text-left {text-align: left;}
 
 
 /* small animation on button hover */
@@ -87,8 +90,8 @@ border-radius: 5px;
 .showcase::before,
 .showcase::after { content:'';
 position: absolute;
-height: 90px; 
-bottom: -60px;
+height: 70px; 
+bottom: -55px;
 background: #fff;
 right:0;
 left:0;

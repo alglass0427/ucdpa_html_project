@@ -39,9 +39,11 @@
     <div class="container grid">
        <!-- <img src="./Guitar Images/microphone.JPG" alt="Picture of a Micropphone">  -->
         <div class="card">
-            <h3> Welcome to Mercury Music?</h3>
-                <p>Here at Mercury Music we are Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book   
+            <h1 class = "text-left  lg"> Who We Are</h1>
+                <p class = "text-left  lead">Mercury Music is a platform set up to take artists from lessons to promotions. 
+                                                We are proud to say we have worked with the best talent in the entertainment 
+                                                    industry across Ireland and have an ever growing client list.  <br>
+                                            Sign up to our Newsletter below for frequent updates on our home grown tallent!!!
             </p>
             </div>
         <!-- <div class="card">
@@ -56,13 +58,13 @@
     <section class = "showcase">
         <div class = "container grid">
             <div class = "showcase-text">
-                <h1>New release</h1>
+                <h2>Latest Release</h2>
                     <!-- <p>This is Where i will keep all
                         the Albums
                     </p> -->
                     <div id = "latestvid" class = "iframe-container card">
                     <iframe
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY" height="auto" width="auto" title="New Video" allow = "fullscreen"></iframe>
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY" height="auto" width="auto" title="New Video" allow = "fullscreen" aria-label="Youtube Video of Muppets doing Bohemian Rhapsody"></iframe>
                     <!-- <iframe src="https://youtu.be/PeOEtIS6EFc?si=WYOoEBzDZOliBoOt" height="200" width="300" title="Iframe Example"></iframe> -->
                     <!-- 2 classes  "btn btn-outline"-->
                     </div>  
@@ -72,7 +74,7 @@
             </div>           
 
             <div class="showcase-form card">
-                    <h2>Sign up to Newsletter</h2>
+                    <h3>Sign up to Newsletter</h3>
                         <form>
                             <div class="form-control">
                                 <input type="text" name = "name"
@@ -109,21 +111,21 @@
 
                 <div class = "fontaw">
                     <i class="fas fa-guitar fa-3x"></i>
-                    <h3>11,294</h3>
-                    <p class="text-secondary">Lessons Given</p>
+                    <h3 aria-label="Number of Lessons Given">11,294</h3>
+                    <p aria-hidden="true" class="text-secondary">Lessons Given</p>
                 </div>
 
 
                 <div class = "fontaw">
                     <i class="fas fa-graduation-cap fa-3x"></i>
-                    <h3>500+</h3>
-                    <p class="text-secondary">Students</p>
+                    <h3 aria-label="Number of Students">500+</h3>
+                    <p aria-hidden="true" class="text-secondary">Students</p>
                 </div>
 
                 <div class = "fontaw">
                     <i class="fas fa-headphones fa-3x"></i>
-                    <h3>50m +</h3>
-                    <p class="text-secondary">Downloads</p>
+                    <h3 aria-label="Number of Downloads">50m +</h3>
+                    <p aria-hidden="true" class="text-secondary">Downloads</p>
                 </div>
 
 
@@ -225,7 +227,17 @@
         </nav>
 
         <div>
-            <p>&copy; HG Holdings</p>
+            <ul>
+                <li><p>&copy; HG Holdings</p></li>
+                <li><p class = "text-center">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>
+                    </p>
+                </li>
+            </ul>
         </div>
 
         <div>
