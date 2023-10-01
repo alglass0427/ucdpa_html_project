@@ -51,3 +51,7 @@ https://jigsaw.w3.org/css-validator/validator
 ## Robots
 
 No robots.txt file used
+
+## Site Map
+
+https://alglass0427.github.io/ucdpa_html_project/mercury/mercury_site_map.drawio
